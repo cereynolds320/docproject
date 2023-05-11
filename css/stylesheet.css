@@ -1,0 +1,718 @@
+h1 {
+    font-family: 'Amarante', sans-serif;
+    color: white;
+    font-size: 500%;
+    margin:0;
+    padding-top:3%;
+}
+
+h2 {
+    font-family: 'Averia Serif Libre', sans-serif;
+    color: white;
+    font-size: 200%;
+    margin:0;
+    padding-top:1%;
+    font-weight: 1000;
+}
+
+h3 {
+    font-family: 'Averia Serif Libre', sans-serif;
+    color: white;
+    font-size: 250%;
+    margin: 2%;
+    margin-left: 0%;
+}
+
+h4 {
+    font-family: 'Amarante', sans-serif;
+    color: white;
+    font-size: 250%;
+    margin: 2%;
+    text-align: center;
+}
+
+h5 {
+    font-family: 'Amarante', sans-serif;
+    color: white;
+    font-size: 170%;
+    margin: 1%;
+    margin-left: 0%;
+    font-weight: 1000;
+}
+
+p {
+    font-family: 'Ysabeau', sans-serif;
+    color: white;
+    margin: 0.5%;
+    font-size: 170%;
+}
+
+p2 {
+    font-family: 'Averia Serif Libre', sans-serif;
+    color: white;
+    font-size: 120%;
+     margin: 0.5%;
+    margin-left: 0%;
+}
+
+p3 {
+    font-family: 'Averia Serif Libre', sans-serif;
+    color: white;
+    font-size: 120%;
+    font-weight: 500;
+}
+
+p4 {
+font-family: 'Averia Serif Libre', sans-serif;
+    color: white;
+    font-size: 120%;
+     margin: 0.5%;
+    margin-left: 0%;
+}
+
+p5 {
+    font-family: 'Averia Serif Libre', sans-serif;
+    color: white;
+    font-size: 100%;
+     text-align: right;
+}
+
+a:link {
+  color: #cc0808;  
+}
+
+a:visited {
+    color: darkgray;
+}
+
+.rd {
+    background-color: black;
+}
+
+l {
+    font-family: 'Averia Serif Libre', sans-serif;
+    color: white;
+    font-size: 100%;
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+.btnlink:link {
+    text-decoration: none;
+    color: white;
+}
+
+.btnlink:hover {
+    color: white;
+}
+
+.btnlink:visited {
+    color: white;
+}
+
+.introbuttons:link {
+    text-decoration: none;
+    color: white;
+}
+
+.introbuttons:hover {
+    color: white;
+}
+
+.introbuttons:visited {
+    color: white;
+}
+
+body {
+    background-color: black;
+    margin: 1%;
+}
+
+header {
+    background-color: black;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+    height: 300px;
+}
+
+header a:link {
+    text-decoration: none;
+}
+
+.headertext {
+    text-align: center;
+    position: relative;
+    height: 200px;
+}
+
+
+footer {
+    background-color: black;
+    padding: 3%;
+    text-align: center;
+}
+
+.credit {
+    text-align: center;
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.bedimage {
+  position: relative;
+    margin: auto;
+  width: 80%;
+}
+
+/* Make the image responsive */
+.bedimage img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.bedimage .glow-on-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  font-size: 300%;
+  padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+  border: none;
+  cursor: pointer;
+  border-radius: 1%;
+    font-family: 'Averia Serif Libre' , sans-serif;
+}
+
+.bedimage .glow-on-hover:hover {
+  background-color: rgba(125,125,125,0.29);
+      color: rgba(225, 225, 225, 1);
+    
+}
+
+.glow-on-hover {
+    width: 60%;
+    height: 40%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #444444;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: #BD0000;
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(30px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+}
+
+.glow-on-hover:active {
+    color: #000;
+}
+
+.glow-on-hover:active:after {
+    background: #444444;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #444444;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.introbody {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+
+.introimg {
+    width: 80%;
+    height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.more {
+    width: 90%;
+    height: 250%;
+    border: none;
+    outline: none;
+    color: white;
+    background: orange;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+    font-family: 'Averia Serif Libre' , sans-serif;
+    font-size: 200%;
+}
+
+.more:before {
+    content: '';
+    background: #BD0000;
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.more:active {
+    color: #000
+}
+
+.more:active:after {
+    background: #444444;
+}
+
+.more:hover:before {
+    opacity: 1;
+}
+
+.more:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #444444;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.introbuttonscontainer {
+    padding-left: 8%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    width: 100%;
+}
+
+.morebtn {
+    width: 45%;
+}
+
+.piracybtn {
+    width: 45%
+}
+
+.piracy {
+    width: 90%;
+    height: 250%;
+    border: none;
+    outline: none;
+    color: white;
+    background: #444444;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+    font-family: 'Averia Serif Libre' , sans-serif;
+    font-size: 200%;
+}
+
+.piracy:before {
+    content: '';
+    background: #BD0000;
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.piracy:active {
+    color: #000
+}
+
+.piracy:active:after {
+    background: #444444;
+}
+
+.piracy:hover:before {
+    opacity: 1;
+}
+
+.piracy:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #444444;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.moreinfobuttonscontainer {
+    padding-left: 8%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    width: 100%;
+}
+
+.conclbtn {
+    width: 45%;
+}
+
+.piracybtn {
+    width: 45%
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 20%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/* The navigation menu links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 20%; /* Same as the width of the sidebar */
+  padding-left: 2%;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.piracybuttonscontainer {
+    padding-left: 7%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    width: 100%;
+}
+
+.backbtnp {
+    width: 45%;
+}
+
+.conclbtnp {
+    width: 45%;
+}
+    
+.backp {
+    width: 90%;
+    height: 250%;
+    border: none;
+    outline: none;
+    color: white;
+    background: orange;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+    font-family: 'Averia Serif Libre' , sans-serif;
+    font-size: 200%;
+}
+
+.backp:before {
+    content: '';
+    background: #BD0000;
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.backp:active {
+    color: #000
+}
+
+.backp:active:after {
+    background: #444444;
+}
+
+.backp:hover:before {
+    opacity: 1;
+}
+
+.backp:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #444444;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.conclp {
+    width: 90%;
+    height: 250%;
+    border: none;
+    outline: none;
+    color: white;
+    background: orange;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+    font-family: 'Averia Serif Libre' , sans-serif;
+    font-size: 200%;
+}
+
+.conclp:before {
+    content: '';
+    background: #BD0000;
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.conclp:active {
+    color: #000
+}
+
+.conclp:active:after {
+    background: #444444;
+}
+
+.conclp:hover:before {
+    opacity: 1;
+}
+
+.conclp:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #444444;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.backbtnc {
+    width: 60%;
+    height: 40%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-family: 'Averia Serif Libre' , sans-serif;
+    font-size: 400%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: auto;
+}
+
+.backbtnc:before {
+    content: '';
+    background: #BD0000;
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.backbtnc:active {
+    color: #000
+}
+
+.backbtnc:active:after {
+    background: #444444;
+}
+
+.backbtnc:hover:before {
+    opacity: 1;
+}
+
+.backbtnc:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.conclusionbutton {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    padding-top: 2%;
+}
+
+.miimg {
+    width: 60%;
+    height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.embeddedvid {
+    width: 60%;
+    height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #403e3e;
+    border-radius: 0px;
+}
+
+audio {
+    width: 100%;
+    border-radius: 0px;
+}
+
+.piracyaudio {
+    padding-left: 22%;
+}
